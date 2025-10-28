@@ -11,3 +11,5 @@ const startServer = async () => {
         console.log("Error...");
     }
 }
+
+startServer();
