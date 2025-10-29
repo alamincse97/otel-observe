@@ -1,4 +1,6 @@
+require("dotenv").config();
 const app = require("./app");
+const logger = require("./logger");
 const PORT = process.env.PORT || 3000;
 
 const startServer = async () => {
@@ -8,7 +10,8 @@ const startServer = async () => {
         });
     }
     catch (error){
-        console.log("Error...");
+        logger.error("Server error", error);
+        process.exit();
     }
 }
 
