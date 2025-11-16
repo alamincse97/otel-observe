@@ -1,5 +1,5 @@
-const userService = require('../services/userService');
-const logger = require('../logger');
+const userService = require('../../services/userService');
+const logger = require('../config/logger');
 
 class UseerController {
     createUser(req, res, next){

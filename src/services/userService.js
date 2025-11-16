@@ -1,5 +1,5 @@
 const {log} = require("console");
-const cache = require('../utills/cache');
+const cache = require('../utils/cache');
 
 class UserService {
 
